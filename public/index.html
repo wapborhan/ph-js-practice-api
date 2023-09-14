@@ -5,16 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice API - Programing Hero</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .code-window {
+        box-shadow: 0px 0 19px -5px rgba(0, 0, 0, 0.5);
+        border-radius: 8px !important;
+      }
+      .code-window > .menubar {
+        padding: 0.5em;
+        font-family: "Monaco", monospace;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+        color: #000;
+        background: linear-gradient(to bottom, #d0d0d0 0%, #878787);
+      }
+      .code-window > .codearea {
+        background-color: #272822;
+        padding: 1em;
+        color: white;
+        border-radius: 0 0 8px 8px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <div class="head bg-slate-700 py-4 text-white">
         <div class="container mx-auto px-14 flex justify-between">
-          <div class="logo text-2xl"><a href="index.html">PH API</a></div>
+          <div class="logo text-2xl"><a href="index.html">SR Dream API</a></div>
           <div class="dates"><span id="date" class="uppercase"></span></div>
         </div>
       </div>
     </header>
+    <main
+      class="antialiased bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 h-100vh"
+    >
+      <div
+        class="py-72 bg-cover bg-no-repeat bg-fixed"
+        style="
+          background-image: url(https://media.vanityfair.com/photos/5ce426151c0b0773cacd1121/master/pass/star-wars-feature-vf-2019-summer-embed-05.jpg);
+        "
+      >
+        <div class="container m-auto text-center px-6 opacity-100">
+          <h2 class="text-4xl font-bold mb-2 text-white">
+            প্র্যাকটিস এর জন্য ফ্রি API
+          </h2>
+          <h3 class="text-2xl mb-8 text-gray-200">
+            Programing Hero সকল প্রাকটিস এ ব্যাবহিত JSON ডাটা গুলা একত্রিত করে
+            API বানানো হয়েছে।
+          </h3>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <section class="container mx-auto px-6 p-10">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+          কখন ব্যবহার করতে হবে?
+        </h2>
+
+        <p class="mx-40 my-10 text-2xl text-justify">
+          SR Dream API হল একটি বিনামূল্যের অনলাইন REST API যা আপনি যখনই আপনার
+          কিছু নকল ডেটার প্রয়োজন হয় তখন ব্যবহার করতে পারেন৷ এটি GitHub-এ একটি
+          README-এ হতে পারে, কোডস্যান্ডবক্সে একটি ডেমোর জন্য, স্ট্যাক ওভারফ্লোতে
+          কোড উদাহরণে অথবা স্থানীয়ভাবে জিনিসগুলি পরীক্ষা করার জন্য।
+        </p>
+        <div class="flex items-center flex-wrap mb-20">
+          <div class="w-full md:w-1/2 pr-10">
+            <h4 class="text-3xl text-gray-800 font-bold mb-3">
+              Knowledge Cafe
+              <span
+                class="bg-cyan-400 tetx-black py-1 px-3 text-1xl rounded-full"
+                >Free</span
+              >
+            </h4>
+            <div class="text-gray-600 mb-8">API লিঙ্ক এখানে</div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div class="code-window">
+              <div class="menubar">Knowledge Cafe</div>
+              <div class="codearea">
+                <pre class="codeblock">
+                  <code class="language-stylus">
+       fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+            </code>
+            </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center flex-wrap mb-20">
+          <div class="w-full md:w-1/2">
+            <div class="code-window">
+              <div class="menubar">Memorable Water Bottle</div>
+              <div class="codearea">
+                <pre class="codeblock">
+                  <code class="language-stylus">
+       fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
+            </code>
+            </pre>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 pl-10">
+            <h4 class="text-3xl text-gray-800 font-bold mb-3">
+              Memorable Water Bottle
+              <span
+                class="bg-cyan-400 tetx-black py-1 px-3 text-1xl rounded-full"
+                >Free</span
+              >
+            </h4>
+            <div class="text-gray-600 mb-8">API লিঙ্ক এখানে</div>
+          </div>
+        </div>
+      </section>
+
+      <!--Call to Action-->
+      <section style="background-color: #667eea">
+        <div class="container mx-auto px-6 text-center py-20">
+          <h2 class="mb-6 text-4xl font-bold text-center text-white">
+            মন্তব্য প্রদান করুন
+          </h2>
+
+          <a
+            class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider hover:border-red hover:text-white hover:bg-red-600"
+            href="mailto:srdreamlab@gmail.com"
+          >
+            মেইল
+          </a>
+        </div>
+      </section>
+    </main>
+    <div class="footer w-full bg-black py-4 text-white text-center font-bold">
+      ©
+      <span id="year"></span>
+      All rights reserved by<a href="https://www.srdreamlab.com">
+        <span class="text-green-700">SR</span>
+        <span class="text-red-700">Dream </span>
+        <span class="text-green-700">Lab</span></a
+      >
+      API
+    </div>
     <script>
       let time = new Date();
       let date = time.getUTCDate();
@@ -38,6 +170,7 @@
       document.getElementById(
         "date"
       ).innerHTML = `Today: ${date} ${months[month]} ${year}`;
+      document.getElementById("year").innerHTML = `${year}`;
 
       console.log(date, months[month], year);
     </script>

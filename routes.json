@@ -1,9 +1,9 @@
 {
-  "/api/knowledgecafe": {
+  "/api/ecafe": {
     "method": "GET",
     "handler": "knowledgeCafe"
   },
-  "/api/memorable-water-bottle": {
+  "/api/bottle": {
     "method": "GET",
     "handler": "memorableWaterBottle"
   }
