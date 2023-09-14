@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
-const port = 3000; // You can choose any available port
+const port = 4411; // You can choose any available port
 const routes = require("./routes.json");
 const handlers = require("./handlers");
+
+app.use(express.static("public"));
 
 // Define routes based on the JSON file
 for (const route in routes) {

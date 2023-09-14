@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice API - Programing Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="head bg-slate-700 py-4 text-white">
+        <div class="container mx-auto px-14 flex justify-between">
+          <div class="logo text-2xl"><a href="index.html">PH API</a></div>
+          <div class="dates"><span id="date" class="uppercase"></span></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      let time = new Date();
+      let date = time.getUTCDate();
+      let months = [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+      ];
+      let month = time.getUTCMonth() + 1;
+      let year = time.getUTCFullYear();
+
+      document.getElementById(
+        "date"
+      ).innerHTML = `Today: ${date} ${months[month]} ${year}`;
+
+      console.log(date, months[month], year);
+    </script>
+  </body>
+</html>

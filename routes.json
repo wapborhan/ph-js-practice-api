@@ -1,8 +1,4 @@
 {
-  "/": {
-    "method": "GET",
-    "handler": "helloWorld"
-  },
   "/api/knowledgecafe": {
     "method": "GET",
     "handler": "knowledgeCafe"
